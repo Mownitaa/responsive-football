@@ -6,9 +6,9 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-body,html{
+/* body,html{
     overflow-x:hidden;
-}
+} */
 /* --------------
 banner part
 ------------ */
@@ -48,7 +48,7 @@ banner part
     font-size: 60px;
     width:485px;
     height: 230px;
-    line-height: 88px;
+    line-height: 80px;
 }
 .heading button{
    border: none;
@@ -70,7 +70,7 @@ banner part
 }
 .player{
     width: 330px;
-    height: 489px;
+    height: 474px;
     /* border: 2px  solid; */
     box-shadow: 3px 3px 35px 3px rgba(128, 128, 128, 0.315);
     margin: 20px;
@@ -80,7 +80,8 @@ banner part
  padding:15px;
  }
 .texts{
-    padding:0px 15px;
+    margin-top: -18px;
+    padding:0px 15px 18px 15px;
     line-height: 23.5px;
     letter-spacing: 0.6px;
 }
@@ -156,6 +157,7 @@ banner part
      width:75%;
      padding: 10px;
      transform:translate(37px);
+     border:3px solid #E02C6D;
  }
  .button:hover{
      color: white;
@@ -176,17 +178,20 @@ footer img{
  
 }
 
-footer .icons{
-    font-size: 20px;
-    letter-spacing: 4px;
-    color: rgba(70, 65, 65, 0.651);
-   
+ .icons>.fab,.icons> .fas{
+    width: 25px;
+    height:30px;
+    background-color: rgba(173, 167, 167, 0.514);
+    border-radius: 30px;
+    position:relative;
+    overflow:hidden;
+    padding:2px 0px 0px 6px;
 }
 .icons i{
-    background-color: rgba(173, 167, 167, 0.514);
-    border-radius: 15px;
-    border-width: 2px;
-
+   line-height: 30px;
+   font-size: 19px;
+   letter-spacing: 4px;
+   color: rgba(70, 65, 65, 0.651);
 }
 .fa-copyright{
     font-size: 12px;
