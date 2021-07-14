@@ -1,6 +1,8 @@
 /* google fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
- /* body */
+ /* ------------
+--------- body-----------
+  */
 body{
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ body{
 /* body,html{
     overflow-x:hidden;
 } */
+
 /* --------------
 banner part
 ------------ */
@@ -26,7 +29,6 @@ banner part
     display: flex;
     margin-left: 0px;
     margin-right: 350px;
-    /* position:relative; */
     justify-content: space-between;
     align-items: center;
 }
@@ -61,7 +63,8 @@ banner part
 .heading i{
     padding-left: 10px;
 }
-
+/*------------------main--------------*/
+/*--------------player album-------------*/
 .album{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -71,7 +74,6 @@ banner part
 .player{
     width: 330px;
     height: 474px;
-    /* border: 2px  solid; */
     box-shadow: 3px 3px 35px 3px rgba(128, 128, 128, 0.315);
     margin: 20px;
 }
@@ -88,12 +90,12 @@ banner part
 .texts p{
     color: gray;
 }
+/*------------update query------------*/
 .updates{
     display: flex;
     justify-content: center;
     align-items: center;
     margin:-80px;
-    /* border: 1px solid; */
 }
 .updates p{
     font-size: 70px;
@@ -106,22 +108,22 @@ banner part
     color:#2D25A0;
     background-color:#3DBAFD;
     border-radius: 60px;
-    
-    /* width:100%; */
-    /* width:550px; */
 }
 .updates:hover .ball-1{
-    transform:translate(625px) rotate(90deg);
+    transform:translate(720px) rotate(90deg);
     transition:transform 2s ease-in ;
 }
 .updates:hover .ball-2{
-    transform:translate(-625px) rotate(90deg);
+    transform:translate(-720px) rotate(90deg);
     transition:transform 2s ease-in ;
 }
 .updates:hover p{
     color:#E02C6D;
     transition: color 1s linear 1s;
 }
+/*----------
+-------login box---------
+*/
 .login-box{
     position:relative;
     width:20%;
@@ -130,8 +132,6 @@ banner part
     transform:translate(550px);
     padding-bottom:70px;
     font-size: 30px;
-    /* background-color: rgb(39, 35, 35); */
-    
 }
 .login-box h1{
     padding-left:17px;
@@ -163,7 +163,9 @@ banner part
      color: white;
      background-color:#E02C6D;
  }
-
+/*-------------
+------------footer-----------
+*/
 footer{
     display: flex;
     flex-direction: column;
@@ -196,6 +198,36 @@ footer img{
 .fa-copyright{
     font-size: 12px;
 }
-#copyright{
-    margin-bottom: 20px;
-}
+/*----------media query -----------
+----------for mobile----------
+*/
+
+ @media only screen and (max-width:688px) {
+     /* body,html{
+         overflow-x:hidden;
+     } */
+     .top-banner{
+        width: 130%;
+        height: 995px;
+        padding-left: 100px;
+     }
+   .banner{
+    display: grid;
+    grid-template-rows:repeat(1,0.5fr);
+    grid-row-gap: 190px;
+    position: absolute;
+   
+   }
+  .heading{
+     font-size: 10%;
+  }
+  main,footer{
+      display: none;
+  }
+  
+   /* .album{
+       grid-template-columns: repeat(1,1fr);
+
+   } */
+
+} 
