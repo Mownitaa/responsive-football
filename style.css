@@ -206,21 +206,45 @@ footer img{
      /* body,html{
          overflow-x:hidden;
      } */
+
      .top-banner{
-        width: 130%;
-        height: 995px;
-        padding-left: 100px;
+         width:120%;
+         height:795px;
+        
      }
-   .banner{
-    display: grid;
-    grid-template-rows:repeat(1,0.5fr);
-    grid-row-gap: 190px;
-    position: absolute;
-   
-   }
-  .heading{
-     font-size: 10%;
-  }
+     .banner{
+       
+         display: flex;
+       width:50%;
+       
+     }
+     .banner-image{
+         position: relative;
+         margin-top:150%;
+         margin-left: -209%;
+         height:350px;
+     }
+     .heading{
+         margin-top:-120%;
+         margin-left:30%
+     }
+     .heading h1{
+         font-size: 59px;
+         /* line-height: 50px; */
+         margin-top: -80px;
+     }
+     /* .banner-image{
+         width:50%;
+
+     }
+     .heading{
+         width:50%;
+         align-items: center;
+     }
+.heading h1{
+    font-size: 36px;
+    width: 10%; */
+}   
   main,footer{
       display: none;
   }
