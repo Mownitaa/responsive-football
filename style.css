@@ -8,9 +8,9 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-/* body,html{
+body,html{
     overflow-x:hidden;
-} */
+}
 
 /* --------------
 banner part
@@ -203,13 +203,12 @@ footer img{
 */
 
  @media only screen and (max-width:688px) {
-     /* body,html{
-         overflow-x:hidden;
-     } */
+    /*------top banner----------*/
+    
 
      .top-banner{
-         width:120%;
-         height:795px;
+         width:100%;
+         height:695px;
         
      }
      .banner{
@@ -218,40 +217,78 @@ footer img{
        width:50%;
        
      }
+     .banner button{
+         width:168px;
+         height: 44px;
+         margin-top: 15%;
+         margin-left: 30px;
+     }
      .banner-image{
          position: relative;
          margin-top:150%;
-         margin-left: -209%;
-         height:350px;
+         margin-left: -260%;
+         width:100px;
+         height:290px;
+        
      }
      .heading{
          margin-top:-120%;
-         margin-left:30%
+         margin-left:30%;
+        
      }
      .heading h1{
-         font-size: 59px;
-         /* line-height: 50px; */
+         font-size: 36px;
+         line-height:55px;
+         width: 278px;
+         height: 118px;
          margin-top: -80px;
+         margin-left: 30px;
      }
-     /* .banner-image{
-         width:50%;
-
-     }
-     .heading{
-         width:50%;
-         align-items: center;
-     }
-.heading h1{
-    font-size: 36px;
-    width: 10%; */
-}   
-  main,footer{
-      display: none;
-  }
-  
-   /* .album{
+     /*------------player album-----------*/
+   .album{
        grid-template-columns: repeat(1,1fr);
-
-   } */
+        margin-left: 5%;
+        margin-top:47px;
+        /* margin-right:-30% */
+   }
+   /*-------update area-------------*/
+   .updates{
+      padding-left: 5px;
+   }
+   .updates p{
+       font-size: 35px;
+   }
+   .updates i{
+       font-size: 35px;
+   }
+   .updates:hover .ball-1{
+    transform:translate(345px) rotate(90deg);
+    transition:transform 2s ease-in ;
+   }
+   .updates:hover .ball-2{
+    transform:translate(-345px) rotate(90deg);
+    transition:transform 2s ease-in ;
+   }
+   /*---------login box-----------*/
+   .login-box{
+       width:45%;
+       margin-top:100px;
+       margin-left:-440px;
+   }
+   .login-box h1{
+       font-size: 30px;
+   }
+   .text-box input{
+       font-size:12px;
+   }
+   /*-----------footer-------*/
+   footer{
+       margin-top:50px;
+       width:100%;
+   }
+   footer img{
+       width:22%;
+      margin-right:650px;
+   }
 
 } 
